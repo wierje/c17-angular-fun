@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Angular</title>
+        <link rel="stylesheet" href="lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body ng-app="monkeyButtApp">
+        <div class="container">
+            <h1>Angular</h1>
+            <div class="alwaysThere">
+                <h3>This div will always be seen since it is outside of the ng-view. Perfect place to include a navbar!</h3>
+            </div>
+            <div ng-view></div>
+            <div class="alwaysThere">
+                <h3>This div will always be seen since it is outside of the ng-view. Perfect place for a footer.</h3>
+            </div>
+        </div>
+            <script src="lib/bower_components/angular/angular.min.js"></script>
+            <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+            <script src="app.js"></script>
+            <script src="/app/controllers/detailCtrl.js"></script>
+            <script src="/app/controllers/listCtrl.js"></script>
+            <script src="/app/controllers/mainCtrl.js"></script>
+            <script src="/app/factories/mainFactory.js"></script>
+            <script src="/app/factories/configFactory.js"></script>
+            <script src="/app/factories/simpleFactory.js"></script>
+            <script src="/app/factories/varFactory.js"></script>
+        </body>
+    </html>

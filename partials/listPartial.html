@@ -1,0 +1,35 @@
+<h1>List partial</h1>
+<h3>List</h3>
+<input type="text" ng-model="searchList">
+<div ng-if="list.length>=3"></div>
+<h5 ng-if="list.length === 3">My list has three items.</h5>
+<div>
+  <ul>
+    <li ng-repeat="listItem in list | filter: searchList">
+      <a href="#/list/{{listItem.id}}">item:
+      {{listItem.id}}</a></li>
+    </ul>
+  </div>
+  <div>
+    <h3>Steps to set up an Angular app</h3>
+    <ul>
+      <li>bower init, bower install angular --save</li>
+      <li>don't forget to create a .gitignore and ignore your dependencies</li>
+      <li>In your javascript:</li>
+      <ul>
+        <li>create your module</li>
+        <li>set up your config</li>
+        <li>create controller(s)</li>
+        <li>create factory/ies -- optional</li>
+        <li>create directive(s) -- optional</li>
+      </ul>
+      <li>In your HTML:</li>
+      <ul>
+        <li>add all appropriate script tags</li>
+        <li>ng-app="nameOfApp"</li>
+        <li>ng-view</li>
+        <li>create partial(s)</li>
+        <li>create directive(s) -- optional</li>
+      </ul>
+    </ul>
+  </div>
